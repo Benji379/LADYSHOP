@@ -2,7 +2,7 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <NonVisualComponents>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound3">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound3">
 
       <Layout>
         <DimensionLayout dim="0">
@@ -17,7 +17,7 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox1">
+    <Container class="MODELO.COMPONET.PictureBox" name="pictureBox1">
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="true"/>
@@ -26,7 +26,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+      <Color blue="1e" green="1e" red="1e" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -47,7 +47,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Component id="panelRound4" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <EmptySpace pref="118" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -62,10 +62,10 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound4">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound4">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
         <Property name="roundBottomLeft" type="int" value="15"/>
         <Property name="roundBottomRight" type="int" value="15"/>
@@ -77,14 +77,14 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="panelRound5" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel12" min="-2" pref="228" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jScrollPane1" max="32767" attributes="0"/>
                               <Component id="panelRound6" max="32767" attributes="0"/>
@@ -136,10 +136,10 @@
             <Property name="text" type="java.lang.String" value="Datos"/>
           </Properties>
         </Component>
-        <Container class="MODELO.UIDesinger.PanelRound" name="panelRound5">
+        <Container class="MODELO.COMPONET.PanelRound" name="panelRound5">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="1e" green="1e" red="1e" type="rgb"/>
             </Property>
             <Property name="roundBottomLeft" type="int" value="15"/>
             <Property name="roundBottomRight" type="int" value="15"/>
@@ -298,10 +298,10 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="MODELO.UIDesinger.PanelRound" name="panelRound6">
+        <Container class="MODELO.COMPONET.PanelRound" name="panelRound6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="1e" green="1e" red="1e" type="rgb"/>
             </Property>
           </Properties>
 
@@ -340,7 +340,7 @@
             <Component class="button.Button" name="cliente_btnRegistrar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="7a" green="6c" red="fc" type="rgb"/>
+                  <Color blue="23" green="23" red="23" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -366,7 +366,7 @@
             <Component class="button.Button" name="cliente_btnActualizar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="7a" green="6c" red="fc" type="rgb"/>
+                  <Color blue="23" green="23" red="23" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -392,7 +392,7 @@
             <Component class="button.Button" name="cliente_btnLimpiar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="7a" green="6c" red="fc" type="rgb"/>
+                  <Color blue="23" green="23" red="23" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -418,7 +418,7 @@
             <Component class="button.Button" name="cliente_btnBorrar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="7a" green="6c" red="fc" type="rgb"/>
+                  <Color blue="23" green="23" red="23" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -445,13 +445,13 @@
         </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.UIDesinger.Scroll.ScrollPaneWin11()"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.COMPONET.ScrollPaneWin11()"/>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="MODELO.UIDesinger.TableDark" name="tablaCliente">
+            <Component class="MODELO.COMPONET.TableDark" name="tablaCliente">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="4" rowCount="0">

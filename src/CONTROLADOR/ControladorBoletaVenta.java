@@ -2,6 +2,7 @@ package CONTROLADOR;
 
 import DAO.ConexionSQL;
 import DAO.ModeloDAO;
+import MODELO.COMPONET.GeneradorFacturaPDF;
 import VISTA.BoletaVenta;
 import VISTA.moduloListaVentas;
 import java.awt.Color;
@@ -21,7 +22,7 @@ public class ControladorBoletaVenta {
     String CodigoVenta = moduloListaVentas.codigoVenta;
     String codigoEmpleado = moduloListaVentas.codigoEmpleado;
     String codigoCliente = moduloListaVentas.codigoCliente;
-
+    String fechaVenta = moduloListaVentas.fechaVenta;
     String empleado = ModeloDAO.consultarDato("empleados", "dni", codigoEmpleado, "nombre", "String").toString() + " "
             + ModeloDAO.consultarDato("empleados", "dni", codigoEmpleado, "apellido", "String").toString();
 
@@ -41,8 +42,8 @@ public class ControladorBoletaVenta {
         consultar(CodigoVenta);
 //        System.out.println(CodigoVenta);
         double acum = 0;
-        for (int i = 0; i < b.tableDark1.getRowCount(); i++) {
-            acum = acum + Double.parseDouble(b.tableDark1.getValueAt(i, 3).toString());
+        for (int i = 0; i < b.tablaVenta.getRowCount(); i++) {
+            acum = acum + Double.parseDouble(b.tablaVenta.getValueAt(i, 3).toString());
         }
         b.txtTotal.setText("" + acum);
     }
@@ -54,7 +55,7 @@ public class ControladorBoletaVenta {
             consulta.setString(1, codigoVenta);
             resultado = consulta.executeQuery();
             Object datos[] = new Object[4];
-            modelo = (DefaultTableModel) b.tableDark1.getModel();
+            modelo = (DefaultTableModel) b.tablaVenta.getModel();
             modelo.setRowCount(0);
             while (resultado.next()) {
                 datos[0] = resultado.getString("nombre");
@@ -69,7 +70,7 @@ public class ControladorBoletaVenta {
             b.txtApellidoCliente.setText(apellidoCliente);
             b.txtDireccionCliente.setText(direccion);
 
-            b.tableDark1.setModel(modelo);
+            b.tablaVenta.setModel(modelo);
         } catch (SQLException e) {
             System.out.println("ERROR: " + e.getMessage());
         }
@@ -89,4 +90,28 @@ public class ControladorBoletaVenta {
         }
     }
 
+    public void generarPDF() {
+        DefaultTableModel modeloPDF = new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Nombre", "Precio U.", "Cantidad"
+                }
+        );
+
+        Object datos[] = new Object[3];
+        for (int i = 0; i < b.tablaVenta.getRowCount(); i++) {
+            datos[0] = b.tablaVenta.getValueAt(i, 0);
+            datos[1] = b.tablaVenta.getValueAt(i, 2);
+            datos[2] = b.tablaVenta.getValueAt(i, 1);
+            modeloPDF.addRow(datos);
+        }
+        String nombreEmpresa = "Ladyshop";
+        String direccionEmpresa = "Av. Rivadavia 5512 Piso 1 Local 38";
+        String emailEmpresa = "info@leidyshop.com";
+        String descripcionEmpresa = "Es increíble que hayas llegado hasta aqui a LADY POSH \n"
+                + ". Disfruta de todas las novedades que tenemos para ti. lo mejor en ropa urbana \n"
+                + ", encuentra los mejores precios";
+        GeneradorFacturaPDF facturaElectronica = new GeneradorFacturaPDF(nombreEmpresa, direccionEmpresa, emailEmpresa, descripcionEmpresa);
+        facturaElectronica.generarPDF(CodigoVenta, ModeloDAO.DNI_EMPLEADO, codigoCliente, direccion, modeloPDF, fechaVenta);
+    }
 }

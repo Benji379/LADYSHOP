@@ -40,7 +40,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="14" green="14" red="14" type="rgb"/>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
@@ -71,10 +71,10 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="MODELO.UIDesinger.PanelRound" name="panelRound1">
+        <Container class="MODELO.COMPONET.PanelRound" name="panelRound1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="1e" green="1e" red="1e" type="rgb"/>
             </Property>
             <Property name="roundBottomLeft" type="int" value="15"/>
             <Property name="roundBottomRight" type="int" value="15"/>
@@ -117,10 +117,10 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="MODELO.UIDesinger.PanelRound" name="btnTrabajador">
+            <Container class="MODELO.COMPONET.PanelRound" name="btnTrabajador">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
                 <Property name="customCursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Hand Cursor"/>
@@ -138,7 +138,7 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox2">
+                <Container class="MODELO.COMPONET.PictureBox" name="pictureBox2">
                   <Properties>
                     <Property name="image" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/img/icons/trabajador.png"/>
@@ -172,10 +172,10 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="MODELO.UIDesinger.PanelRound" name="btnProductos">
+            <Container class="MODELO.COMPONET.PanelRound" name="btnProductos">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
                 <Property name="customCursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Hand Cursor"/>
@@ -193,7 +193,7 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox3">
+                <Container class="MODELO.COMPONET.PictureBox" name="pictureBox3">
                   <Properties>
                     <Property name="image" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/img/icons/productos.png"/>
@@ -227,10 +227,10 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="MODELO.UIDesinger.PanelRound" name="btnAutos">
+            <Container class="MODELO.COMPONET.PanelRound" name="btnAutos">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
                 <Property name="customCursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Hand Cursor"/>
@@ -248,7 +248,7 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox5">
+                <Container class="MODELO.COMPONET.PictureBox" name="pictureBox5">
                   <Properties>
                     <Property name="image" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/img/icons/cliente.png"/>
@@ -282,10 +282,10 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="MODELO.UIDesinger.PanelRound" name="btnContratos">
+            <Container class="MODELO.COMPONET.PanelRound" name="btnContratos">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
                 <Property name="customCursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                   <Color id="Hand Cursor"/>
@@ -303,7 +303,7 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox4">
+                <Container class="MODELO.COMPONET.PictureBox" name="pictureBox4">
                   <Properties>
                     <Property name="image" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/img/icons/contrato.png"/>
@@ -340,7 +340,7 @@
             <Container class="javax.swing.JPanel" name="jPanel2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -368,7 +368,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Container class="MODELO.UIDesinger.PictureBox" name="pictureBox1">
+                <Container class="MODELO.COMPONET.PictureBox" name="pictureBox1">
                   <Properties>
                     <Property name="image" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/com/img/icons/iconoUsuario.png"/>
@@ -403,7 +403,7 @@
         </Container>
         <Container class="javax.swing.JScrollPane" name="scrollContenedor">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.UIDesinger.Scroll.ScrollPaneWin11()"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.COMPONET.Scroll.ScrollPaneWin11()"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
@@ -411,7 +411,7 @@
             <Container class="javax.swing.JPanel" name="CONTENEDOR">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="59" green="4d" red="fc" type="rgb"/>
+                  <Color blue="1e" green="1e" red="1e" type="rgb"/>
                 </Property>
               </Properties>
 

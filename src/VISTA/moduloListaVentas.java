@@ -18,8 +18,8 @@ public class moduloListaVentas extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel26 = new javax.swing.JLabel();
-        jScrollPane1 = new MODELO.UIDesinger.Scroll.ScrollPaneWin11();
-        tablaVentas = new MODELO.UIDesinger.TableDark();
+        jScrollPane1 = new MODELO.COMPONET.ScrollPaneWin11();
+        tablaVentas = new MODELO.COMPONET.TableDark();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
@@ -40,7 +40,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
         txtMax = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
 
-        setBackground(new java.awt.Color(252, 77, 89));
+        setBackground(new java.awt.Color(30, 30, 30));
 
         jLabel26.setFont(new java.awt.Font("Century Gothic", 1, 48)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
@@ -69,7 +69,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tablaVentas);
 
-        jPanel1.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel1.setBackground(new java.awt.Color(30, 30, 30));
 
         jPanel4.setBackground(new java.awt.Color(0, 129, 93));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -77,7 +77,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
         jPanel5.setBackground(new java.awt.Color(0, 129, 93));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel3.setBackground(new java.awt.Color(30, 30, 30));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
@@ -96,7 +96,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
         jPanel3.add(txtDniCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 160, 30));
         jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 160, 10));
 
-        jPanel2.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel2.setBackground(new java.awt.Color(30, 30, 30));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
@@ -115,7 +115,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
         jPanel2.add(txtDniTrabajador, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 160, 30));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 160, 10));
 
-        jPanel6.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel6.setBackground(new java.awt.Color(30, 30, 30));
 
         jLabel3.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -277,6 +277,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
     public static String codigoVenta;
     public static String codigoEmpleado;
     public static String codigoCliente;
+    public static String fechaVenta;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
@@ -295,7 +296,7 @@ public class moduloListaVentas extends javax.swing.JPanel {
     public javax.swing.JSeparator jSeparator2;
     public javax.swing.JSeparator jSeparator3;
     public javax.swing.JSeparator jSeparator4;
-    public MODELO.UIDesinger.TableDark tablaVentas;
+    public MODELO.COMPONET.TableDark tablaVentas;
     public javax.swing.JTextField txtDniCliente;
     public javax.swing.JTextField txtDniTrabajador;
     public javax.swing.JTextField txtMax;

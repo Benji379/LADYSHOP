@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="59" green="4d" red="fc" type="rgb"/>
+      <Color blue="1e" green="1e" red="1e" type="rgb"/>
     </Property>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1116, 1219]"/>
@@ -26,22 +26,23 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace pref="34" max="32767" attributes="0"/>
-                      <Component id="panelRound4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace pref="34" max="32767" attributes="0"/>
+                              <Component id="panelRound4" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                               <Component id="panelRound5" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-                              <Component id="btnFinalizarCompra" min="-2" pref="240" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                      <Component id="btnFinalizarCompra" min="-2" pref="240" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -76,7 +77,7 @@
                       <Component id="panelRound5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnFinalizarCompra" min="-2" pref="63" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="68" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -84,10 +85,10 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound2">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
         <Property name="roundBottomLeft" type="int" value="10"/>
         <Property name="roundBottomRight" type="int" value="10"/>
@@ -129,10 +130,10 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound3">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
         <Property name="roundBottomLeft" type="int" value="10"/>
         <Property name="roundBottomRight" type="int" value="10"/>
@@ -196,7 +197,7 @@
     <Component class="button.Button" name="btnFinalizarCompra">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="23" green="23" red="23" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -219,10 +220,10 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFinalizarCompraActionPerformed"/>
       </Events>
     </Component>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound4">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound4">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
         <Property name="roundBottomLeft" type="int" value="15"/>
         <Property name="roundBottomRight" type="int" value="15"/>
@@ -299,13 +300,13 @@
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.UIDesinger.Scroll.ScrollPaneWin11()"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.COMPONET.ScrollPaneWin11()"/>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="MODELO.UIDesinger.TableDark" name="tablaCompra">
+            <Component class="MODELO.COMPONET.TableDark" name="tablaCompra">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="5" rowCount="0">
@@ -453,10 +454,10 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound5">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound5">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="23" green="23" red="23" type="rgb"/>
         </Property>
         <Property name="roundBottomLeft" type="int" value="10"/>
         <Property name="roundBottomRight" type="int" value="10"/>
@@ -613,7 +614,7 @@
         <Component class="combobox.Combobox" name="combobox1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="23" green="23" red="23" type="rgb"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -645,15 +646,15 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.UIDesinger.Scroll.ScrollPaneWin11()"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new MODELO.COMPONET.ScrollPaneWin11()"/>
       </AuxValues>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Container class="MODELO.UIDesinger.PanelRound" name="panelRound6">
+        <Container class="MODELO.COMPONET.PanelRound" name="panelRound6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="1e" green="1e" red="1e" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[474, 864]"/>

@@ -3,6 +3,7 @@ package CONTROLADOR;
 import DAO.ConexionSQL;
 import DAO.ModeloDAO;
 import MODELO.ActionUtils;
+import MODELO.COMPONET.GeneradorFacturaPDF;
 import MODELO.UIController;
 import VISTA.moduloNuevaVenta;
 import java.awt.HeadlessException;
@@ -12,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
@@ -323,6 +325,7 @@ public class ControladorNuevaVenta {
                     if (Double.parseDouble(v.txtTotalGeneral.getText()) > 0) {
                         ACTUALIZAR_STOCK();
                         REGISTRAR_VENTA();
+                        generarPDF();
                         for (int i = 0; i < v.tablaCompra.getRowCount(); i++) {
                             String nombreProducto = v.tablaCompra.getValueAt(i, 1).toString();
                             int cantidad = Integer.parseInt(v.tablaCompra.getValueAt(i, 3).toString());
@@ -340,8 +343,33 @@ public class ControladorNuevaVenta {
             } else {
                 JOptionPane.showMessageDialog(null, "Rellene con datos válidos");
             }
-
         }
+    }
+
+    private void generarPDF() {
+        DefaultTableModel modeloPDF = new javax.swing.table.DefaultTableModel(
+                new Object[][]{},
+                new String[]{
+                    "Nombre", "Precio U.", "Cantidad"
+                }
+        );
+
+        Object datos[] = new Object[3];
+        for (int i = 0; i < v.tablaCompra.getRowCount(); i++) {
+            datos[0] = v.tablaCompra.getValueAt(i, 1);
+            datos[1] = v.tablaCompra.getValueAt(i, 3);
+            datos[2] = v.tablaCompra.getValueAt(i, 2);
+            modeloPDF.addRow(datos);
+        }
+        String nombreEmpresa = "Ladyshop";
+        String direccionEmpresa = "Av. Rivadavia 5512 Piso 1 Local 38";
+        String emailEmpresa = "info@leidyshop.com";
+        String descripcionEmpresa = "Es increíble que hayas llegado hasta aqui a LADY POSH \n"
+                + ". Disfruta de todas las novedades que tenemos para ti. lo mejor en ropa urbana \n"
+                + ", encuentra los mejores precios";
+        GeneradorFacturaPDF facturaElectronica = new GeneradorFacturaPDF(nombreEmpresa, direccionEmpresa, emailEmpresa, descripcionEmpresa);
+        String fecha = LocalDate.now().toString();
+        facturaElectronica.generarPDF(valorActualID(), ModeloDAO.DNI_EMPLEADO, v.txtDniCliente.getText(), v.txtDireccionCliente.getText(), modeloPDF, fecha);
     }
 
     public void button1ActionPerformed() {

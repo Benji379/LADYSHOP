@@ -3,7 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="59" green="4d" red="fc" type="rgb"/>
+      <Color blue="1e" green="1e" red="1e" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -39,7 +39,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
       </Properties>
 
@@ -81,10 +81,10 @@
             <Property name="text" type="java.lang.String" value="Ventas"/>
           </Properties>
         </Component>
-        <Container class="MODELO.UIDesinger.PanelRound" name="panelRound1">
+        <Container class="MODELO.COMPONET.PanelRound" name="panelRound1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="59" green="4d" red="fc" type="rgb"/>
+              <Color blue="1e" green="1e" red="1e" type="rgb"/>
             </Property>
             <Property name="roundBottomLeft" type="int" value="20"/>
             <Property name="roundBottomRight" type="int" value="20"/>
@@ -144,7 +144,7 @@
             <Component class="button.Button" name="btnNuevaVenta">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="7a" green="6c" red="fc" type="rgb"/>
+                  <Color blue="23" green="23" red="23" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -168,10 +168,10 @@
         </Container>
       </SubComponents>
     </Container>
-    <Container class="MODELO.UIDesinger.PanelRound" name="panelRound2">
+    <Container class="MODELO.COMPONET.PanelRound" name="panelRound2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="4d" red="fc" type="rgb"/>
+          <Color blue="1e" green="1e" red="1e" type="rgb"/>
         </Property>
       </Properties>
 

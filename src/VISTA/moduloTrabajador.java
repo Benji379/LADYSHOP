@@ -18,10 +18,10 @@ public class moduloTrabajador extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        scrollTable = new MODELO.UIDesinger.Scroll.ScrollPaneWin11();
-        tablaTrabajadores = new MODELO.UIDesinger.TableDark();
-        scrollDatos = new MODELO.UIDesinger.Scroll.ScrollPaneWin11();
-        panelRound1 = new MODELO.UIDesinger.PanelRound();
+        scrollTable = new MODELO.COMPONET.ScrollPaneWin11();
+        tablaTrabajadores = new MODELO.COMPONET.TableDark();
+        scrollDatos = new MODELO.COMPONET.ScrollPaneWin11();
+        panelRound1 = new MODELO.COMPONET.PanelRound();
         txtDni = new textfield.TextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -44,7 +44,7 @@ public class moduloTrabajador extends javax.swing.JPanel {
         btnBorrar = new button.Button();
         btnLimpiar = new button.Button();
 
-        setBackground(new java.awt.Color(252, 77, 89));
+        setBackground(new java.awt.Color(30, 30, 30));
 
         jLabel2.setFont(new java.awt.Font("Century", 0, 55)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -77,7 +77,7 @@ public class moduloTrabajador extends javax.swing.JPanel {
         scrollDatos.setBackground(new java.awt.Color(25, 25, 25));
         scrollDatos.setBorder(null);
 
-        panelRound1.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound1.setBackground(new java.awt.Color(30, 30, 30));
         panelRound1.setForeground(new java.awt.Color(0, 129, 93));
         panelRound1.setRoundBottomLeft(15);
         panelRound1.setRoundBottomRight(15);
@@ -261,10 +261,10 @@ public class moduloTrabajador extends javax.swing.JPanel {
 
         scrollDatos.setViewportView(panelRound1);
 
-        jPanel1.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel1.setBackground(new java.awt.Color(30, 30, 30));
         jPanel1.setForeground(new java.awt.Color(0, 129, 93));
 
-        btnRegistrar.setBackground(new java.awt.Color(252, 108, 122));
+        btnRegistrar.setBackground(new java.awt.Color(35, 35, 35));
         btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/agregar.png"))); // NOI18N
         btnRegistrar.setText("REGISTRAR");
@@ -276,7 +276,7 @@ public class moduloTrabajador extends javax.swing.JPanel {
             }
         });
 
-        btnActualizar.setBackground(new java.awt.Color(252, 108, 122));
+        btnActualizar.setBackground(new java.awt.Color(35, 35, 35));
         btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/actualizar.png"))); // NOI18N
         btnActualizar.setText("ACTUALIZAR");
@@ -288,7 +288,7 @@ public class moduloTrabajador extends javax.swing.JPanel {
             }
         });
 
-        btnBorrar.setBackground(new java.awt.Color(252, 108, 122));
+        btnBorrar.setBackground(new java.awt.Color(35, 35, 35));
         btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
         btnBorrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/eliminar.png"))); // NOI18N
         btnBorrar.setText("BORRAR");
@@ -300,7 +300,7 @@ public class moduloTrabajador extends javax.swing.JPanel {
             }
         });
 
-        btnLimpiar.setBackground(new java.awt.Color(252, 108, 122));
+        btnLimpiar.setBackground(new java.awt.Color(35, 35, 35));
         btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/limpiar.png"))); // NOI18N
         btnLimpiar.setText("LIMPIAR");
@@ -435,10 +435,10 @@ public class moduloTrabajador extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabel9;
     public javax.swing.JPanel jPanel1;
-    public MODELO.UIDesinger.PanelRound panelRound1;
+    public MODELO.COMPONET.PanelRound panelRound1;
     public javax.swing.JScrollPane scrollDatos;
     public javax.swing.JScrollPane scrollTable;
-    public MODELO.UIDesinger.TableDark tablaTrabajadores;
+    public MODELO.COMPONET.TableDark tablaTrabajadores;
     public textfield.TextField txtApellido;
     public textfield.TextField txtContraseña;
     public textfield.TextField txtCorreo;

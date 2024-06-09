@@ -16,9 +16,9 @@ public class BoletaVenta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound6 = new MODELO.UIDesinger.PanelRound();
+        panelRound6 = new MODELO.COMPONET.PanelRound();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableDark1 = new MODELO.UIDesinger.TableDark();
+        tablaVenta = new MODELO.COMPONET.TableDark();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         txtNombreCliente = new javax.swing.JLabel();
@@ -29,6 +29,7 @@ public class BoletaVenta extends javax.swing.JFrame {
         BarraTitulo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         txtNombreEmpleado = new javax.swing.JLabel();
+        btnDescargar = new button.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Boleta");
@@ -42,7 +43,7 @@ public class BoletaVenta extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelRound6.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound6.setBackground(new java.awt.Color(35, 35, 35));
         panelRound6.setPreferredSize(new java.awt.Dimension(474, 560));
         panelRound6.setRoundBottomLeft(25);
         panelRound6.setRoundBottomRight(25);
@@ -50,7 +51,7 @@ public class BoletaVenta extends javax.swing.JFrame {
         panelRound6.setRoundTopRight(25);
         panelRound6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tableDark1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaVenta.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -66,7 +67,7 @@ public class BoletaVenta extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tableDark1);
+        jScrollPane1.setViewportView(tablaVenta);
 
         panelRound6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 390, 230));
 
@@ -134,6 +135,20 @@ public class BoletaVenta extends javax.swing.JFrame {
         txtNombreEmpleado.setForeground(new java.awt.Color(255, 255, 255));
         panelRound6.add(txtNombreEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 180, 27));
 
+        btnDescargar.setBackground(new java.awt.Color(35, 35, 35));
+        btnDescargar.setForeground(new java.awt.Color(255, 255, 255));
+        btnDescargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/descargar.png"))); // NOI18N
+        btnDescargar.setText("Descargar");
+        btnDescargar.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnDescargar.setFont(new java.awt.Font("Comic Sans MS", 1, 16)); // NOI18N
+        btnDescargar.setShadowColor(new java.awt.Color(0, 0, 0));
+        btnDescargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDescargarActionPerformed(evt);
+            }
+        });
+        panelRound6.add(btnDescargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 490, -1, -1));
+
         getContentPane().add(panelRound6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 550));
 
         pack();
@@ -154,6 +169,10 @@ public class BoletaVenta extends javax.swing.JFrame {
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         this.setVisible(false);
     }//GEN-LAST:event_formWindowClosing
+
+    private void btnDescargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDescargarActionPerformed
+        controlador.generarPDF();
+    }//GEN-LAST:event_btnDescargarActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -183,13 +202,14 @@ public class BoletaVenta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JLabel BarraTitulo;
+    public button.Button btnDescargar;
     public javax.swing.JLabel jLabel23;
     public javax.swing.JLabel jLabel24;
     public javax.swing.JLabel jLabel27;
     public javax.swing.JLabel jLabel5;
     public javax.swing.JScrollPane jScrollPane1;
-    public MODELO.UIDesinger.PanelRound panelRound6;
-    public MODELO.UIDesinger.TableDark tableDark1;
+    public MODELO.COMPONET.PanelRound panelRound6;
+    public MODELO.COMPONET.TableDark tablaVenta;
     public javax.swing.JLabel txtApellidoCliente;
     public javax.swing.JLabel txtDireccionCliente;
     public javax.swing.JLabel txtNombreCliente;

@@ -1,7 +1,6 @@
 package VISTA;
 
 import CONTROLADOR.ControladorLogin;
-import MODELO.UIController;
 
 public class frmLogin extends javax.swing.JFrame {
 
@@ -17,15 +16,20 @@ public class frmLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        panelRound1 = new MODELO.UIDesinger.PanelRound();
+        panelRound1 = new MODELO.COMPONET.PanelRound();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnIngresar = new button.Button();
-        txtUsuario = new textfield.TextField();
-        txtContraseña = new passwordfield.PasswordField();
         BarraTitulo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        panelCustom2 = new MODELO.COMPONET.PanelCustom();
+        txtPassword = new javax.swing.JPasswordField();
+        labelOjito = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        panelCustom1 = new MODELO.COMPONET.PanelCustom();
+        txtUsuario = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -36,7 +40,7 @@ public class frmLogin extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelRound1.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound1.setBackground(new java.awt.Color(30, 30, 30));
         panelRound1.setRoundBottomLeft(25);
         panelRound1.setRoundBottomRight(25);
         panelRound1.setRoundTopLeft(25);
@@ -58,7 +62,7 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel4.setText("Usuario");
         panelRound1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, -1));
 
-        btnIngresar.setBackground(new java.awt.Color(252, 108, 122));
+        btnIngresar.setBackground(new java.awt.Color(30, 30, 30));
         btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
         btnIngresar.setText("INGRESAR");
         btnIngresar.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -70,30 +74,6 @@ public class frmLogin extends javax.swing.JFrame {
             }
         });
         panelRound1.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 170, 60));
-
-        txtUsuario.setForeground(new java.awt.Color(0, 0, 0));
-        txtUsuario.setToolTipText("");
-        txtUsuario.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtUsuario.setName(""); // NOI18N
-        txtUsuario.setSelectionColor(new java.awt.Color(0, 129, 93));
-        txtUsuario.setShadowColor(new java.awt.Color(0, 0, 0));
-        txtUsuario.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtUsuarioKeyTyped(evt);
-            }
-        });
-        panelRound1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 180, 50));
-
-        txtContraseña.setForeground(new java.awt.Color(0, 0, 0));
-        txtContraseña.setFont(new java.awt.Font("Comic Sans MS", 0, 16)); // NOI18N
-        txtContraseña.setSelectionColor(new java.awt.Color(0, 129, 93));
-        txtContraseña.setShadowColor(new java.awt.Color(0, 0, 0));
-        txtContraseña.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtContraseñaKeyTyped(evt);
-            }
-        });
-        panelRound1.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 180, 50));
 
         BarraTitulo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BarraTitulo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -118,9 +98,49 @@ public class frmLogin extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        panelRound1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 10, 30, -1));
+        panelRound1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 30, -1));
 
-        getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 470));
+        panelCustom2.setBackground(new java.awt.Color(204, 204, 204));
+        panelCustom2.setRound(40);
+        panelCustom2.setShadowColor(new java.awt.Color(0, 0, 0));
+        panelCustom2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtPassword.setFont(new java.awt.Font("DialogInput", 0, 19)); // NOI18N
+        txtPassword.setSelectionColor(new java.awt.Color(51, 51, 51));
+        panelCustom2.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 140, 50));
+
+        labelOjito.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelOjito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/OjoAbierto.png"))); // NOI18N
+        labelOjito.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelOjito.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelOjitoMouseClicked(evt);
+            }
+        });
+        panelCustom2.add(labelOjito, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 40, 50));
+
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/ICONO CONTRASEÑA.png"))); // NOI18N
+        panelCustom2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 50, 50));
+
+        panelRound1.add(panelCustom2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 250, 55));
+
+        panelCustom1.setBackground(new java.awt.Color(204, 204, 204));
+        panelCustom1.setRound(40);
+        panelCustom1.setShadowColor(new java.awt.Color(0, 0, 0));
+        panelCustom1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtUsuario.setFont(new java.awt.Font("DialogInput", 0, 19)); // NOI18N
+        txtUsuario.setSelectionColor(new java.awt.Color(51, 51, 51));
+        panelCustom1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 50));
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/ICONO USUARIO.png"))); // NOI18N
+        panelCustom1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 50, 50));
+
+        panelRound1.add(panelCustom1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 250, 55));
+
+        getContentPane().add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -128,10 +148,6 @@ public class frmLogin extends javax.swing.JFrame {
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         controlador.btnIngresarActionPerformed(evt);
     }//GEN-LAST:event_btnIngresarActionPerformed
-
-    private void txtUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyTyped
-        UIController.limitacionNumeros(txtUsuario, evt, 8);
-    }//GEN-LAST:event_txtUsuarioKeyTyped
 
     private void BarraTituloMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BarraTituloMouseDragged
         controlador.BarraTituloMouseDragged(evt);
@@ -145,9 +161,9 @@ public class frmLogin extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabel5MouseClicked
 
-    private void txtContraseñaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtContraseñaKeyTyped
-        UIController.limitacionCaracteres(txtContraseña, evt, 16, false);
-    }//GEN-LAST:event_txtContraseñaKeyTyped
+    private void labelOjitoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelOjitoMouseClicked
+        controlador.clickOjo();
+    }//GEN-LAST:event_labelOjitoMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -183,8 +199,13 @@ public class frmLogin extends javax.swing.JFrame {
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JLabel jLabel5;
-    public MODELO.UIDesinger.PanelRound panelRound1;
-    public passwordfield.PasswordField txtContraseña;
-    public textfield.TextField txtUsuario;
+    public javax.swing.JLabel jLabel6;
+    public javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel labelOjito;
+    public MODELO.COMPONET.PanelCustom panelCustom1;
+    public MODELO.COMPONET.PanelCustom panelCustom2;
+    public MODELO.COMPONET.PanelRound panelRound1;
+    public javax.swing.JPasswordField txtPassword;
+    public javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

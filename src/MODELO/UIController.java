@@ -2,7 +2,18 @@ package MODELO;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
@@ -17,10 +28,46 @@ public class UIController {
         }
     }
 
+    public static InputStream toInputStream(String imagePath) throws IOException {
+        File imageFile = new File(imagePath);
+        if (!imageFile.exists()) {
+            throw new IOException("El archivo no existe: " + imagePath);
+        }
+        return new FileInputStream(imageFile);
+    }
+
+    public static Icon toIcon(InputStream inputStream) throws IOException {
+        BufferedImage bufferedImage = ImageIO.read(inputStream);
+        if (bufferedImage == null) {
+            System.out.println("El InputStream no contiene una imagen válida.");
+//            throw new IOException("El InputStream no contiene una imagen válida.");
+        }
+        return new ImageIcon(bufferedImage);
+    }
+
+    public static InputStream toInputStream(Icon icon) throws IOException {
+        // Convertir el Icon a BufferedImage
+        BufferedImage bufferedImage = new BufferedImage(
+                icon.getIconWidth(),
+                icon.getIconHeight(),
+                BufferedImage.TYPE_INT_ARGB
+        );
+        Graphics graphics = bufferedImage.getGraphics();
+        icon.paintIcon(null, graphics, 0, 0);
+        graphics.dispose();
+
+        // Escribir la imagen en un ByteArrayOutputStream
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ImageIO.write(bufferedImage, "png", byteArrayOutputStream);
+
+        // Convertir el ByteArrayOutputStream a InputStream
+        return new ByteArrayInputStream(byteArrayOutputStream.toByteArray());
+    }
+
     public static void MostrarPanel(JPanel contenedor, JPanel panel, int ancho, int largo) {
         panel.setSize(ancho, largo);
         panel.setLocation(0, 0);
-        
+
         contenedor.removeAll();
         contenedor.add(panel, BorderLayout.CENTER);
         contenedor.revalidate();

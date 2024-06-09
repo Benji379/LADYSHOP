@@ -16,11 +16,11 @@ public final class moduloCliente extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound3 = new MODELO.UIDesinger.PanelRound();
-        pictureBox1 = new MODELO.UIDesinger.PictureBox();
-        panelRound4 = new MODELO.UIDesinger.PanelRound();
+        panelRound3 = new MODELO.COMPONET.PanelRound();
+        pictureBox1 = new MODELO.COMPONET.PictureBox();
+        panelRound4 = new MODELO.COMPONET.PanelRound();
         jLabel12 = new javax.swing.JLabel();
-        panelRound5 = new MODELO.UIDesinger.PanelRound();
+        panelRound5 = new MODELO.COMPONET.PanelRound();
         jLabel13 = new javax.swing.JLabel();
         cliente_txtDni = new textfield_suggestion.TextFieldSuggestion();
         cliente_txtNombre = new textfield_suggestion.TextFieldSuggestion();
@@ -29,13 +29,13 @@ public final class moduloCliente extends javax.swing.JPanel {
         cliente_txtApellido = new textfield_suggestion.TextFieldSuggestion();
         cliente_txtDireccion = new textfield_suggestion.TextFieldSuggestion();
         jLabel17 = new javax.swing.JLabel();
-        panelRound6 = new MODELO.UIDesinger.PanelRound();
+        panelRound6 = new MODELO.COMPONET.PanelRound();
         cliente_btnRegistrar = new button.Button();
         cliente_btnActualizar = new button.Button();
         cliente_btnLimpiar = new button.Button();
         cliente_btnBorrar = new button.Button();
-        jScrollPane1 = new MODELO.UIDesinger.Scroll.ScrollPaneWin11();
-        tablaCliente = new MODELO.UIDesinger.TableDark();
+        jScrollPane1 = new MODELO.COMPONET.ScrollPaneWin11();
+        tablaCliente = new MODELO.COMPONET.TableDark();
         jLabel14 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
@@ -49,9 +49,9 @@ public final class moduloCliente extends javax.swing.JPanel {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(30, 30, 30));
 
-        panelRound4.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound4.setBackground(new java.awt.Color(30, 30, 30));
         panelRound4.setRoundBottomLeft(15);
         panelRound4.setRoundBottomRight(15);
         panelRound4.setRoundTopLeft(15);
@@ -62,7 +62,7 @@ public final class moduloCliente extends javax.swing.JPanel {
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Datos");
 
-        panelRound5.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound5.setBackground(new java.awt.Color(30, 30, 30));
         panelRound5.setRoundBottomLeft(15);
         panelRound5.setRoundBottomRight(15);
         panelRound5.setRoundTopLeft(15);
@@ -160,9 +160,9 @@ public final class moduloCliente extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        panelRound6.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound6.setBackground(new java.awt.Color(30, 30, 30));
 
-        cliente_btnRegistrar.setBackground(new java.awt.Color(252, 108, 122));
+        cliente_btnRegistrar.setBackground(new java.awt.Color(35, 35, 35));
         cliente_btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
         cliente_btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/agregar.png"))); // NOI18N
         cliente_btnRegistrar.setText("REGISTRAR");
@@ -175,7 +175,7 @@ public final class moduloCliente extends javax.swing.JPanel {
             }
         });
 
-        cliente_btnActualizar.setBackground(new java.awt.Color(252, 108, 122));
+        cliente_btnActualizar.setBackground(new java.awt.Color(35, 35, 35));
         cliente_btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
         cliente_btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/actualizar.png"))); // NOI18N
         cliente_btnActualizar.setText("ACTUALIZAR");
@@ -188,7 +188,7 @@ public final class moduloCliente extends javax.swing.JPanel {
             }
         });
 
-        cliente_btnLimpiar.setBackground(new java.awt.Color(252, 108, 122));
+        cliente_btnLimpiar.setBackground(new java.awt.Color(35, 35, 35));
         cliente_btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         cliente_btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/limpiar.png"))); // NOI18N
         cliente_btnLimpiar.setText("LIMPIAR");
@@ -201,7 +201,7 @@ public final class moduloCliente extends javax.swing.JPanel {
             }
         });
 
-        cliente_btnBorrar.setBackground(new java.awt.Color(252, 108, 122));
+        cliente_btnBorrar.setBackground(new java.awt.Color(35, 35, 35));
         cliente_btnBorrar.setForeground(new java.awt.Color(255, 255, 255));
         cliente_btnBorrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/eliminar.png"))); // NOI18N
         cliente_btnBorrar.setText("BORRAR");
@@ -274,13 +274,13 @@ public final class moduloCliente extends javax.swing.JPanel {
         panelRound4Layout.setHorizontalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound4Layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+                .addGap(20, 20, 20)
                 .addGroup(panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(panelRound5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelRound4Layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
+                        .addGap(50, 50, 50)
                         .addGroup(panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane1)
                             .addComponent(panelRound6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -315,7 +315,7 @@ public final class moduloCliente extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -379,11 +379,11 @@ public final class moduloCliente extends javax.swing.JPanel {
     public javax.swing.JLabel jLabel16;
     public javax.swing.JLabel jLabel17;
     public javax.swing.JScrollPane jScrollPane1;
-    public MODELO.UIDesinger.PanelRound panelRound3;
-    public MODELO.UIDesinger.PanelRound panelRound4;
-    public MODELO.UIDesinger.PanelRound panelRound5;
-    public MODELO.UIDesinger.PanelRound panelRound6;
-    public MODELO.UIDesinger.PictureBox pictureBox1;
-    public MODELO.UIDesinger.TableDark tablaCliente;
+    public MODELO.COMPONET.PanelRound panelRound3;
+    public MODELO.COMPONET.PanelRound panelRound4;
+    public MODELO.COMPONET.PanelRound panelRound5;
+    public MODELO.COMPONET.PanelRound panelRound6;
+    public MODELO.COMPONET.PictureBox pictureBox1;
+    public MODELO.COMPONET.TableDark tablaCliente;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,14 +28,13 @@ public class ControladorFrmPrincipal {
         if (rango.equalsIgnoreCase("empleado")) {
             p.btnTrabajador.setVisible(false);
         }
-
     }
-
+    
     private void initPanel() {
-        UIController.setPanelBackgroundColors(p.btnTrabajador, "#FC6C7A", "#FC97BA");
-        UIController.setPanelBackgroundColors(p.btnProductos, "#FC6C7A", "#FC97BA");
-        UIController.setPanelBackgroundColors(p.btnContratos, "#FC6C7A", "#FC97BA");
-        UIController.setPanelBackgroundColors(p.btnAutos, "#FC6C7A", "#FC97BA");
+        UIController.setPanelBackgroundColors(p.btnTrabajador, "#282828", "#232323");
+        UIController.setPanelBackgroundColors(p.btnProductos, "#282828", "#232323");
+        UIController.setPanelBackgroundColors(p.btnContratos, "#282828", "#232323");
+        UIController.setPanelBackgroundColors(p.btnAutos, "#282828", "#232323");
     }
 
     public void cambiarPanel(JPanel panel) {

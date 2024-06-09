@@ -20,14 +20,14 @@ public class ControladorModuloVentas {
     }
 
     public void btnListaVentaActionPerformed() {
-        v.btnListaVenta.setBackground(new Color(252, 36, 56));
-        v.btnNuevaVenta.setBackground(new Color(252, 77, 89));
+        v.btnNuevaVenta.setBackground(new Color(30, 30, 30));
+        v.btnListaVenta.setBackground(new Color(233, 181, 30));
         UIController.MostrarPanel(v.panelRound2, new moduloNuevaVenta(), 1120, 950);
     }
 
     public void btnNuevaVentaActionPerformed() {
-        v.btnNuevaVenta.setBackground(new Color(252, 36, 56));
-        v.btnListaVenta.setBackground(new Color(252, 77, 89));
+        v.btnListaVenta.setBackground(new Color(30, 30, 30));
+        v.btnNuevaVenta.setBackground(new Color(233, 181, 30));
         UIController.MostrarPanel(v.panelRound2, new moduloListaVentas(), 920, 634);
     }
 

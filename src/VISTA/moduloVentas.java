@@ -17,21 +17,21 @@ public class moduloVentas extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
-        panelRound1 = new MODELO.UIDesinger.PanelRound();
+        panelRound1 = new MODELO.COMPONET.PanelRound();
         btnListaVenta = new button.Button();
         btnNuevaVenta = new button.Button();
-        panelRound2 = new MODELO.UIDesinger.PanelRound();
+        panelRound2 = new MODELO.COMPONET.PanelRound();
 
-        setBackground(new java.awt.Color(252, 77, 89));
+        setBackground(new java.awt.Color(30, 30, 30));
 
-        jPanel1.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel1.setBackground(new java.awt.Color(30, 30, 30));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 3, 65)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Ventas");
 
-        panelRound1.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound1.setBackground(new java.awt.Color(30, 30, 30));
         panelRound1.setRoundBottomLeft(20);
         panelRound1.setRoundBottomRight(20);
         panelRound1.setRoundTopLeft(20);
@@ -49,7 +49,7 @@ public class moduloVentas extends javax.swing.JPanel {
             }
         });
 
-        btnNuevaVenta.setBackground(new java.awt.Color(252, 108, 122));
+        btnNuevaVenta.setBackground(new java.awt.Color(35, 35, 35));
         btnNuevaVenta.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaVenta.setText("Lista Ventas");
         btnNuevaVenta.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -103,7 +103,7 @@ public class moduloVentas extends javax.swing.JPanel {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        panelRound2.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound2.setBackground(new java.awt.Color(30, 30, 30));
         panelRound2.setLayout(new java.awt.CardLayout());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -135,7 +135,7 @@ public class moduloVentas extends javax.swing.JPanel {
     public button.Button btnNuevaVenta;
     public javax.swing.JLabel jLabel12;
     public javax.swing.JPanel jPanel1;
-    public MODELO.UIDesinger.PanelRound panelRound1;
-    public MODELO.UIDesinger.PanelRound panelRound2;
+    public MODELO.COMPONET.PanelRound panelRound1;
+    public MODELO.COMPONET.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
 }

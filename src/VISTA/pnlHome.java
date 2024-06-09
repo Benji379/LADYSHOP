@@ -18,26 +18,26 @@ public final class pnlHome extends javax.swing.JPanel {
 
         txtHora = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        pictureBox1 = new MODELO.UIDesinger.PictureBox();
+        pictureBox1 = new MODELO.COMPONET.PictureBox();
         txtRango = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtFecha = new javax.swing.JLabel();
         txtDia = new javax.swing.JLabel();
-        panelRound1 = new MODELO.UIDesinger.PanelRound();
+        panelRound1 = new MODELO.COMPONET.PanelRound();
         btnExcel = new button.Button();
         btnArchivos = new button.Button();
         btnCalculadora = new button.Button();
         btnBlockNotas = new button.Button();
         btnNavegador = new button.Button();
 
-        setBackground(new java.awt.Color(252, 77, 89));
+        setBackground(new java.awt.Color(30, 30, 30));
         setPreferredSize(new java.awt.Dimension(865, 588));
 
         txtHora.setFont(new java.awt.Font("Century", 0, 16)); // NOI18N
         txtHora.setForeground(new java.awt.Color(255, 255, 255));
         txtHora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        jPanel1.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel1.setBackground(new java.awt.Color(30, 30, 30));
 
         pictureBox1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/iconUsuario.png"))); // NOI18N
 
@@ -93,9 +93,9 @@ public final class pnlHome extends javax.swing.JPanel {
                 .addGap(30, 30, 30))
         );
 
-        panelRound1.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound1.setBackground(new java.awt.Color(30, 30, 30));
 
-        btnExcel.setBackground(new java.awt.Color(252, 77, 89));
+        btnExcel.setBackground(new java.awt.Color(35, 35, 35));
         btnExcel.setForeground(new java.awt.Color(51, 51, 51));
         btnExcel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/excel.png"))); // NOI18N
         btnExcel.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -107,7 +107,7 @@ public final class pnlHome extends javax.swing.JPanel {
             }
         });
 
-        btnArchivos.setBackground(new java.awt.Color(252, 77, 89));
+        btnArchivos.setBackground(new java.awt.Color(35, 35, 35));
         btnArchivos.setForeground(new java.awt.Color(51, 51, 51));
         btnArchivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/carpeta.png"))); // NOI18N
         btnArchivos.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -118,7 +118,7 @@ public final class pnlHome extends javax.swing.JPanel {
             }
         });
 
-        btnCalculadora.setBackground(new java.awt.Color(252, 77, 89));
+        btnCalculadora.setBackground(new java.awt.Color(35, 35, 35));
         btnCalculadora.setForeground(new java.awt.Color(51, 51, 51));
         btnCalculadora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/calculadora.png"))); // NOI18N
         btnCalculadora.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -130,7 +130,7 @@ public final class pnlHome extends javax.swing.JPanel {
             }
         });
 
-        btnBlockNotas.setBackground(new java.awt.Color(252, 77, 89));
+        btnBlockNotas.setBackground(new java.awt.Color(35, 35, 35));
         btnBlockNotas.setForeground(new java.awt.Color(51, 51, 51));
         btnBlockNotas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/notas.png"))); // NOI18N
         btnBlockNotas.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -142,7 +142,7 @@ public final class pnlHome extends javax.swing.JPanel {
             }
         });
 
-        btnNavegador.setBackground(new java.awt.Color(252, 77, 89));
+        btnNavegador.setBackground(new java.awt.Color(35, 35, 35));
         btnNavegador.setForeground(new java.awt.Color(51, 51, 51));
         btnNavegador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/web.png"))); // NOI18N
         btnNavegador.setCurrentCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -242,8 +242,8 @@ public final class pnlHome extends javax.swing.JPanel {
     public button.Button btnNavegador;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JPanel jPanel1;
-    public MODELO.UIDesinger.PanelRound panelRound1;
-    public MODELO.UIDesinger.PictureBox pictureBox1;
+    public MODELO.COMPONET.PanelRound panelRound1;
+    public MODELO.COMPONET.PictureBox pictureBox1;
     public javax.swing.JLabel txtDia;
     public javax.swing.JLabel txtFecha;
     public static javax.swing.JLabel txtHora;

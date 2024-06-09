@@ -66,6 +66,7 @@ public class ControladorListaVentas {
             moduloListaVentas.codigoVenta = v.tablaVentas.getValueAt(filaSeleccionada, 0).toString();
             moduloListaVentas.codigoEmpleado = v.tablaVentas.getValueAt(filaSeleccionada, 1).toString();
             moduloListaVentas.codigoCliente = v.tablaVentas.getValueAt(filaSeleccionada, 2).toString();
+            moduloListaVentas.fechaVenta = v.tablaVentas.getValueAt(filaSeleccionada, 4).toString();
             BoletaVenta abrir = new BoletaVenta();
             abrir.setVisible(true);
         }

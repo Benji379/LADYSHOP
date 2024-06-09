@@ -16,39 +16,39 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        panelRound1 = new MODELO.UIDesinger.PanelRound();
-        btnTrabajador = new MODELO.UIDesinger.PanelRound();
-        pictureBox2 = new MODELO.UIDesinger.PictureBox();
+        panelRound1 = new MODELO.COMPONET.PanelRound();
+        btnTrabajador = new MODELO.COMPONET.PanelRound();
+        pictureBox2 = new MODELO.COMPONET.PictureBox();
         jLabel1 = new javax.swing.JLabel();
-        btnProductos = new MODELO.UIDesinger.PanelRound();
-        pictureBox3 = new MODELO.UIDesinger.PictureBox();
+        btnProductos = new MODELO.COMPONET.PanelRound();
+        pictureBox3 = new MODELO.COMPONET.PictureBox();
         jLabel2 = new javax.swing.JLabel();
-        btnAutos = new MODELO.UIDesinger.PanelRound();
-        pictureBox5 = new MODELO.UIDesinger.PictureBox();
+        btnAutos = new MODELO.COMPONET.PanelRound();
+        pictureBox5 = new MODELO.COMPONET.PictureBox();
         jLabel4 = new javax.swing.JLabel();
-        btnContratos = new MODELO.UIDesinger.PanelRound();
-        pictureBox4 = new MODELO.UIDesinger.PictureBox();
+        btnContratos = new MODELO.COMPONET.PanelRound();
+        pictureBox4 = new MODELO.COMPONET.PictureBox();
         jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        pictureBox1 = new MODELO.UIDesinger.PictureBox();
+        pictureBox1 = new MODELO.COMPONET.PictureBox();
         txtRango = new javax.swing.JLabel();
-        scrollContenedor = new MODELO.UIDesinger.Scroll.ScrollPaneWin11();
+        scrollContenedor = new MODELO.COMPONET.ScrollPaneWin11();
         CONTENEDOR = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Letty's Shop");
         setIconImage(java.awt.Toolkit.getDefaultToolkit().getImage(getClass().getResource("/com/img/icons/icon.png")));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(20, 20, 20));
         jPanel1.setToolTipText("");
 
-        panelRound1.setBackground(new java.awt.Color(252, 77, 89));
+        panelRound1.setBackground(new java.awt.Color(30, 30, 30));
         panelRound1.setRoundBottomLeft(15);
         panelRound1.setRoundBottomRight(15);
         panelRound1.setRoundTopLeft(15);
         panelRound1.setRoundTopRight(15);
 
-        btnTrabajador.setBackground(new java.awt.Color(252, 77, 89));
+        btnTrabajador.setBackground(new java.awt.Color(30, 30, 30));
         btnTrabajador.setCustomCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTrabajador.setRoundBottomLeft(10);
         btnTrabajador.setRoundBottomRight(10);
@@ -69,7 +69,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jLabel1.setText("Trabajador");
         btnTrabajador.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
-        btnProductos.setBackground(new java.awt.Color(252, 77, 89));
+        btnProductos.setBackground(new java.awt.Color(30, 30, 30));
         btnProductos.setCustomCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProductos.setRoundBottomLeft(10);
         btnProductos.setRoundBottomRight(10);
@@ -90,7 +90,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jLabel2.setText("Productos");
         btnProductos.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 80, 30));
 
-        btnAutos.setBackground(new java.awt.Color(252, 77, 89));
+        btnAutos.setBackground(new java.awt.Color(30, 30, 30));
         btnAutos.setCustomCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAutos.setRoundBottomLeft(10);
         btnAutos.setRoundBottomRight(10);
@@ -111,7 +111,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jLabel4.setText("Clientes");
         btnAutos.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
-        btnContratos.setBackground(new java.awt.Color(252, 77, 89));
+        btnContratos.setBackground(new java.awt.Color(30, 30, 30));
         btnContratos.setCustomCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnContratos.setRoundBottomLeft(10);
         btnContratos.setRoundBottomRight(10);
@@ -132,7 +132,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jLabel3.setText("Ventas");
         btnContratos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 30));
 
-        jPanel2.setBackground(new java.awt.Color(252, 77, 89));
+        jPanel2.setBackground(new java.awt.Color(30, 30, 30));
 
         pictureBox1.setImage(new javax.swing.ImageIcon(getClass().getResource("/com/img/icons/iconoUsuario.png"))); // NOI18N
         pictureBox1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -196,7 +196,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
-        CONTENEDOR.setBackground(new java.awt.Color(252, 77, 89));
+        CONTENEDOR.setBackground(new java.awt.Color(30, 30, 30));
         CONTENEDOR.setLayout(new java.awt.CardLayout());
         scrollContenedor.setViewportView(CONTENEDOR);
 
@@ -283,22 +283,22 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JPanel CONTENEDOR;
-    public MODELO.UIDesinger.PanelRound btnAutos;
-    public MODELO.UIDesinger.PanelRound btnContratos;
-    public MODELO.UIDesinger.PanelRound btnProductos;
-    public MODELO.UIDesinger.PanelRound btnTrabajador;
+    public MODELO.COMPONET.PanelRound btnAutos;
+    public MODELO.COMPONET.PanelRound btnContratos;
+    public MODELO.COMPONET.PanelRound btnProductos;
+    public MODELO.COMPONET.PanelRound btnTrabajador;
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JPanel jPanel1;
     public javax.swing.JPanel jPanel2;
-    public MODELO.UIDesinger.PanelRound panelRound1;
-    public MODELO.UIDesinger.PictureBox pictureBox1;
-    public MODELO.UIDesinger.PictureBox pictureBox2;
-    public MODELO.UIDesinger.PictureBox pictureBox3;
-    public MODELO.UIDesinger.PictureBox pictureBox4;
-    public MODELO.UIDesinger.PictureBox pictureBox5;
+    public MODELO.COMPONET.PanelRound panelRound1;
+    public MODELO.COMPONET.PictureBox pictureBox1;
+    public MODELO.COMPONET.PictureBox pictureBox2;
+    public MODELO.COMPONET.PictureBox pictureBox3;
+    public MODELO.COMPONET.PictureBox pictureBox4;
+    public MODELO.COMPONET.PictureBox pictureBox5;
     public javax.swing.JScrollPane scrollContenedor;
     public static javax.swing.JLabel txtRango;
     // End of variables declaration//GEN-END:variables
